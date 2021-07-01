@@ -1,3 +1,7 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
 /* Reset */
 * {
     margin: 0;
@@ -5,14 +9,11 @@
     box-sizing: border-box;
 }
 
-/* Clearfix */
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
+body {
+    background-color: gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
 }
-
-/* Common */
 
 li {
     display: inline-block;
@@ -23,15 +24,41 @@ a {
     text-decoration: none;
 }
 
+/* Clearfix */
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
 
+/* Text Align */
 .txt-align-left {text-align: left;}
 .txt-align-right {text-align: right;}
 
+/* Buttons */
+.btn {
+    color: #fff;
+    background-color: gray;
+    padding: 5px 20px;
+    /* font-weight: bold; */
+}
+
+.btn.bg-blue{
+    background-color: #0061FF;
+    color: #fff;
+}
+
+
+
+
+/* Float */
 .fl-left {float: left;}
 .fl-right {float: right;}
 
+/* Width % */
 .w-50 {width: calc(100% / 2);} 
 
+/* Commons */
 .container {
     margin: 0 20px;
     height: 100%;
@@ -43,13 +70,15 @@ a {
 
 /* Sections */
 
-body {
-    background-color: gray;
-}
+/* Header */
 
 header {
     height: 50px;
     background-color: #fff;
+}
+
+header a {
+    color: #000;
 }
 
 header .logo {
@@ -65,21 +94,26 @@ header .logo img {
 header .nav-left {
     height: 100%;
     line-height: 50px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 header .nav-left a {
     height: 100%;    
     vertical-align: middle;
+    margin: 0 10px;
 }
 
 header .nav-right {
     height: 100%;
     line-height: 50px;
 }
-
 header .nav-right a {
     height: 100%; 
     vertical-align: middle;
+    margin: 0 10px;
+}
+
+#btn-inizia {
+    margin-left: 20px;
 }
 
