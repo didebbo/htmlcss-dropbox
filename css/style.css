@@ -5,63 +5,81 @@
     box-sizing: border-box;
 }
 
-/* Componenti */
-.row::after {
+/* Clearfix */
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
 }
 
-/* Proprietà */
+/* Common */
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.container {
-    border: 2px solid red;
-    height: 100%;
-}
-.row {
-    border: 2px solid green;
-    height: 100%;
-}
-.col {
-    border: 2px solid yellow;
-    height: 100%;
-}
-
-.fl-left {float: left;}
-.fl-right {float: right;}
-
-.nav li{
+li {
     display: inline-block;
     list-style: none;
 }
 
-/* Sezioni */
+a {
+    text-decoration: none;
+}
+
+
+.txt-align-left {text-align: left;}
+.txt-align-right {text-align: right;}
+
+.fl-left {float: left;}
+.fl-right {float: right;}
+
+.w-50 {width: calc(100% / 2);} 
+
+.container {
+    margin: 0 20px;
+    height: 100%;
+}
+
+.row, .col {
+    height: 100%;
+}
+
+/* Sections */
 
 body {
     background-color: gray;
 }
 
-/* Header */
 header {
+    height: 50px;
     background-color: #fff;
 }
 
-header .container {
-    height: 50px;
+header .logo {
+    height: 100%;    
+    line-height: 50px;
 }
 
-header > .container {
-    width: 95%;
-    min-width: 1024px;
-    margin: auto;
+header .logo img {
+    width: 100%;    
+    vertical-align: middle;
 }
 
-/* header .logo img {
-    width: 100%;
+header .nav-left {
     height: 100%;
-} */
+    line-height: 50px;
+    margin-left: 40px;
+}
+
+header .nav-left a {
+    height: 100%;    
+    vertical-align: middle;
+}
+
+header .nav-right {
+    height: 100%;
+    line-height: 50px;
+}
+
+header .nav-right a {
+    height: 100%; 
+    vertical-align: middle;
+}
+
