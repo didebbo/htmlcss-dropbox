@@ -1,3 +1,67 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Componenti */
+.row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* Proprietà */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    border: 2px solid red;
+    height: 100%;
+}
+.row {
+    border: 2px solid green;
+    height: 100%;
+}
+.col {
+    border: 2px solid yellow;
+    height: 100%;
+}
+
+.fl-left {float: left;}
+.fl-right {float: right;}
+
+.nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+/* Sezioni */
+
 body {
     background-color: gray;
 }
+
+/* Header */
+header {
+    background-color: #fff;
+}
+
+header .container {
+    height: 50px;
+}
+
+header > .container {
+    width: 95%;
+    min-width: 1024px;
+    margin: auto;
+}
+
+/* header .logo img {
+    width: 100%;
+    height: 100%;
+} */
