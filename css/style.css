@@ -12,10 +12,14 @@
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     max-width: 1920px;
     min-width: 1024px;
     margin: auto;
+}
+
+ul {
+    display: inline-block;
 }
 
 li {
@@ -43,14 +47,15 @@ a {
 .txt-align-right {text-align: right;}
 
 /* Buttons */
-a.btn {
+.btn {
+    display: inline-block;
     color: #fff;
     background-color: gray;
-    padding: 5px 20px;
+    padding: 5px 10px;
     font-weight: bold;
 }
 
-a.btn.bg-blue{
+.btn.bg-blue {
     background-color: #0061FF;
     color: #fff;
 } 
@@ -78,6 +83,9 @@ header .container {
 
 header .row {
     height: 100%;
+}
+
+header .logo {
     line-height: 50px;
 }
 
@@ -85,7 +93,11 @@ header .logo img {
     width: 100%;    
     vertical-align: middle;
 }
-header .nav a {
+
+header .nav.fl-left{
+    line-height: 50px;
+}
+header .nav.fl-left a {
     vertical-align: middle;
     color: black;
     margin: 0 10px;
@@ -93,6 +105,19 @@ header .nav a {
 
 header .nav.fl-left {
     margin: 0 20px;
+}
+
+header .nav.fl-right ul {
+    line-height: 50px;
+}
+
+header .nav.fl-right ul a {
+    color: black;
+    margin: 0 10px;
+}
+
+header .nav.fl-right a {
+    vertical-align: middle;
 }
 
 #btn-inizia {
@@ -114,51 +139,41 @@ main {
 } 
 
 .hero .container {
-    /* height: 100%; */
     margin: auto 80px;
-    /* border: 4px solid green; */
 }
 
-.hero .title h1 {
-    font-size: 3rem ;
+.hero .title {
+    font-size: 2rem;
 }
 
 .hero .row {
     position: relative;
-    /* margin-top: 40px; */
-    /* border: 2px solid red; */
     bottom: -60px;
 }
 
 .hero .description {
     float: left;
-    /* border: 2px solid green; */
     width: 40%;
-}
-
-.hero .description p:first-child {
-    font-size: medium;
-    font-size: 0.9rem;
-    
 }
 
 .hero .description .link {
     margin-top: 40px;
     margin-bottom: 10px;
+    height: 100%;
 }
 
 .hero .description p:last-child {
     text-decoration: underline;
+    color: red;
 }
 
 .hero .description .fa-arrow-down {
-    font-size: 2rem;
+    font-size: 2em;
     margin: 20px 0;
 }
 
 .hero .jumbo {
     float: left;
-    /* border: 2px solid green; */
     width: 60%;
 }
 
@@ -177,8 +192,7 @@ main {
     background-color: lightcoral;
 }
 
-.price .title h2{
-    /* text-align: center; */
-    font-size: 1.5rem /*24px*/ ;
+.price .title h2 {
+    /* font-size: 2rem; */
 }
 
