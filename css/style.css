@@ -52,7 +52,13 @@ a {
 .btn.bg-blue {
     background-color: #0061FF;
     color: #fff;
-} 
+}
+
+.btn.bg-white {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
 
 /* Commons */
 
@@ -181,7 +187,6 @@ main {
 
 .prices .container {
     margin: 200px 140px 0;
-    /* background-color: lightcoral; */
 }
 
 .prices .title h2 {
@@ -314,6 +319,30 @@ main {
     padding: 5px 40px;
 }
 
+/* Partner */
+
+.partner .container{
+    margin: 100px 140px;
+}
+
+.partner .col-left {
+    float: left;
+    width: 50%;
+}
+
+.partner .col-right {
+    float: right;
+    width: 50%;
+    padding: 40px;
+}
+
+.partner .col-left img {
+    width: 100%;
+}
+
+.partner .col-right p {
+    margin: 20px 0;
+} 
 
 
 
