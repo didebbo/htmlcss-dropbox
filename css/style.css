@@ -13,10 +13,13 @@ body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
+    max-width: 1920px;
+    min-width: 1024px;
+    margin: auto;
 }
 
 li {
-    float: left;
+    display: inline-block;
     list-style: none;
 }
 
@@ -58,22 +61,22 @@ a.btn.bg-blue{
 
 header {
     position: fixed;
+    top: 0;
+    left: 50%;
     width: 100%;
+    min-width: 1024px;
+    max-width: 1920px;
+    transform: translate(-50%);
     height: 50px;
     background-color: #fff;
 }
 
-header a {
-    color: #000;
-}
-
 header .container {
-    min-width: 1024px;
-    height: 100%;
     margin: 0 20px;
 }
 
-header .logo {
+header .row {
+    height: 100%;
     line-height: 50px;
 }
 
@@ -82,22 +85,13 @@ header .logo img {
     vertical-align: middle;
 }
 
-header .nav-left {
-    line-height: 50px;
-    margin-left: 20px;
-}
-
-header .nav-left a {
-    vertical-align:middle;
-    margin: 0 10px;
-}
-
-header .nav-right {
-    line-height: 50px;
-}
-header .nav-right a { 
+header .nav a {
     vertical-align: middle;
-    margin: 0 10px;
+    color: black;
+}
+
+header .nav.fl-left {
+    margin: 0 20px;
 }
 
 #btn-inizia {
@@ -113,14 +107,12 @@ main {
 
 main .hero {
     background-color: #B4D0E7;
-    padding-top: 80px;
+    padding-top: 60px;
 } 
 
-main .hero .container {
-    width: 80%;
-    min-width: 1024px;
+.hero .container {
     height: 100%;
-    margin: auto;
+    margin: auto 80px;
     /* border: 4px solid green; */
 }
 
