@@ -342,7 +342,27 @@ main {
 
 .partner .col-right p {
     margin: 20px 0;
-} 
+}
+
+/* Ventaglio */
+
+.dropbox-business .container {
+    margin: 100px 140px;
+}
+
+.dropbox-business .col {
+    float: left;
+    width: calc(100% / 3);
+    padding: 20px;
+}
+
+.dropbox-business .col h3 {
+    margin: 20px 0;
+}
+
+.dropbox-business .col img {
+    width: 100%;
+}
 
 
 
