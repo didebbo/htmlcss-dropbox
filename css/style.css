@@ -364,5 +364,20 @@ main {
     width: 100%;
 }
 
+/* Clienti */
+.clienti .container {
+    margin: 100px 140px;
+}
+
+.clienti h2 {
+    margin-bottom: 20px;
+}
+
+.clienti a {
+    text-decoration: underline;
+}
+
+
+
 
 
