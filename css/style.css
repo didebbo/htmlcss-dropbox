@@ -387,21 +387,19 @@ main {
     float: right;
 }
 .brands .master-col  {
-    /* float: left; */
-    /* width: calc(100% / 3); */
-    /* max-width: calc(1920px / 3); */
-    /* min-width: calc(1024px / 3); */
-    /* width: calc(100% / 3); */
-    border: 2px solid green;
+    float: left;
+    width: calc(100% / 3);
+    max-width: calc(1920px / 3);
+    min-width: calc(1024px / 3);
 }
 
 .brands .col {
     position: relative;
     float: left;
-    max-width: calc((1920px / 3) / 2);
-    min-width: calc((1024px / 3) / 2);
+    width: calc(100% / 2);
+    height: calc((100vw / 3) / 2);
     max-height: calc((1920px / 3) / 2);
-    height: calc((1024px / 3) / 2);
+    min-height: calc((1024px / 3) / 2);
 }
 
 .brands .col img {
