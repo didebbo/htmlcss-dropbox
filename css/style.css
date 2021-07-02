@@ -377,6 +377,19 @@ main {
     text-decoration: underline;
 }
 
+/* Brands */
+
+.brands .master-col  {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.brands .col {
+    float: left;
+    width: calc(100% / 2);
+    height: 100px;
+    border: 1px solid red;
+}
 
 
 
