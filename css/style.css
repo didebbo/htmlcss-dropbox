@@ -175,98 +175,123 @@ main {
 }
 
 /* Price Section */
-.price {
+.prices {
     background-color: #fff;
 }
 
-.price .container {
-    height: 400px;
+.prices .container {
     margin: 200px 140px 0;
     /* background-color: lightcoral; */
 }
 
-.price .title h2 {
+.prices .title h2 {
     font-size: 2em;
 }
 
-.price .plans {
+.prices .plans {
     margin: 20px 0;
+    /* background-color: red; */
 }
 
-.price .cards {
-    margin: 20px 0;
+.prices .cards {
+    margin: 40px -20px;
 }
 
-.price .cards .card {
+.prices .cards .card {
     float: left;
+    padding: 0 20px;
     width: calc(100% /3);
+    /* background-color: red; */
 }
 
-.price .cards .card .top {
+.prices .cards .card .top {
     border: 1px solid grey;
     border-bottom: 0;
     text-align: center;
 }
 
-.price .cards .card .middle {
+.prices .cards .card .middle {
     border: 1px solid grey;
     padding: 40px;
 }
 
-.price .cards .card .middle .type .price {
+.prices .cards .card .middle .type .price {
     margin-top: 10px;
     font-weight: bold;
 }
 
-.price .cards .card .middle .type .price .per {
+.prices .cards .card .middle .type .price .per {
     display: inline-block;
     font-weight: normal;
     font-size: 0.9em;
     margin-top: 5px;
 }
 
-.price .cards .card .middle .features {
+.prices .cards .card .middle .features {
     font-size: 0.9em;
     margin-top: 20px;
 }
 
-.price .cards .card .middle .features li {
+.prices .cards .card .middle .features li {
     display: table;
     content: "";
     clear: both;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
 }
 
-.price .cards .card .middle .features i {
+.prices .cards .card .middle .features i {
     float: left;
     margin-right: 10px;
 }
 
-.price .cards .card .middle .features p {
+.prices .cards .card .middle .features p {
     width: calc(90% - 10px);
     float: left;
     vertical-align: middle;
 }
 
-
-.price .cards .card .middle .try a.btn {
+.prices .cards .card .middle .try a.btn {
     display: block;
     text-align: center;
 }
 
-.price .cards .card .middle .try p.or-buy {
+.prices .cards .card .middle .try p.or-buy {
     margin: 20px 0;
     font-size: 0.9em;
 }
 
-.price .cards .card .middle .try hr {
+.prices .cards .card .middle .try hr {
     width: 20%;
     height: 0.5px;
     background-color: gray;
     border: none;
 }
 
+.prices .cards .card .middle .p-salienti {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.prices .cards .card .middle .p-salienti li {
+    display: table;
+    content: "";
+    clear: both;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.prices .cards .card .middle .p-salienti i {
+    float: left;
+    margin-right: 10px;
+    color: #0363FF;
+}
+
+.prices .cards .card .middle .p-salienti p {
+    width: calc(90% - 10px);
+    float: left;
+    vertical-align: middle;
+}
 
 
 
