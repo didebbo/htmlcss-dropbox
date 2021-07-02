@@ -46,7 +46,7 @@ a {
     color: #fff;
     background-color: gray;
     padding: 5px 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .btn.bg-blue {
@@ -216,6 +216,7 @@ main {
 .prices .cards .card .middle {
     border: 1px solid grey;
     padding: 40px;
+    position: relative;
 }
 
 .prices .cards .card .middle .type .price {
@@ -294,6 +295,23 @@ main {
     width: calc(90% - 10px);
     float: left;
     vertical-align: middle;
+}
+
+.prices .cards .card.full-card {
+    width: 100%;
+}
+
+.prices .cards .card.full-card .middle .features p {
+    display: inline;
+    /* background-color: red; */
+}
+
+.prices .cards .card.full-card .middle a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    padding: 5px 40px;
 }
 
 
