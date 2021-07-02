@@ -29,6 +29,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #0967FF;
 }
 
 /* Clearfix */
@@ -174,77 +175,99 @@ main {
 }
 
 /* Price Section */
-section.price {
+.price {
     background-color: #fff;
 }
 
-section.price > .container {
+.price .container {
     height: 400px;
     margin: 200px 140px 0;
     /* background-color: lightcoral; */
 }
 
-section.price .title h2 {
+.price .title h2 {
     font-size: 2em;
 }
 
-section.price .plans {
-    /* background-color: red; */
+.price .plans {
     margin: 20px 0;
 }
 
-section.price .row {
-    /* background-color: green; */
+.price .cards {
     margin: 20px 0;
 }
 
-section.price .col {
+.price .cards .card {
+    float: left;
     width: calc(100% /3);
 }
 
-section.price .top {
+.price .cards .card .top {
     border: 1px solid grey;
+    border-bottom: 0;
     text-align: center;
 }
 
-section.price .middle {
+.price .cards .card .middle {
     border: 1px solid grey;
     padding: 40px;
 }
 
-section.price .middle .type .price {
+.price .cards .card .middle .type .price {
     margin-top: 10px;
     font-weight: bold;
 }
 
-section.price .middle .type .price .per {
+.price .cards .card .middle .type .price .per {
     display: inline-block;
     font-weight: normal;
     font-size: 0.9em;
     margin-top: 5px;
 }
 
-section.price .middle .features {
+.price .cards .card .middle .features {
     font-size: 0.9em;
     margin-top: 20px;
 }
 
-section.price .middle .features li {
+.price .cards .card .middle .features li {
     display: table;
     content: "";
     clear: both;
     margin: 20px 0;
+    width: 100%;
 }
 
-section.price .middle .features i {
+.price .cards .card .middle .features i {
     float: left;
     margin-right: 10px;
 }
 
-section.price .middle .features p {
+.price .cards .card .middle .features p {
     width: calc(90% - 10px);
     float: left;
+    vertical-align: middle;
 }
+
+
+.price .cards .card .middle .try a.btn {
+    display: block;
+    text-align: center;
+}
+
+.price .cards .card .middle .try p.or-buy {
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+.price .cards .card .middle .try hr {
+    width: 20%;
+    height: 0.5px;
+    background-color: gray;
+    border: none;
+}
+
+
 
 
 
