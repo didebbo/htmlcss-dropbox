@@ -379,16 +379,54 @@ main {
 
 /* Brands */
 
-.brands .master-col  {
+.brands .master-col.fl-left {
     float: left;
-    width: calc(100% / 3);
+}
+
+.brands .master-col.fl-right {
+    float: right;
+}
+.brands .master-col  {
+    /* float: left; */
+    /* width: calc(100% / 3); */
+    /* max-width: calc(1920px / 3); */
+    /* min-width: calc(1024px / 3); */
+    /* width: calc(100% / 3); */
+    border: 2px solid green;
 }
 
 .brands .col {
+    position: relative;
     float: left;
-    width: calc(100% / 2);
-    height: 100px;
-    border: 1px solid red;
+    max-width: calc((1920px / 3) / 2);
+    min-width: calc((1024px / 3) / 2);
+    max-height: calc((1920px / 3) / 2);
+    height: calc((1024px / 3) / 2);
+}
+
+.brands .col img {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#designit {
+    border: 8px solid #D0E9CD;
+    background-color: #A2D39B;
+}
+
+#arizona_state_university {
+    background-color: #61082B;
+}
+
+#university_of_florida {
+    background-color: #0093CE;
+}
+
+#topps {
+    background-color: #FF1C1C;
 }
 
 
