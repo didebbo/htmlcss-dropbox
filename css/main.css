@@ -46,7 +46,7 @@ main {
 /* /Hero */
 
 /* Plans */
-.plans .small-container {
+.plans {
     margin-top: 180px;
 }
 
@@ -58,21 +58,14 @@ main {
     margin-right: 10px;
 }
 
-.plans .row {
-    position: relative;
-    left: -20px;
-}
-
 .plans .col {
-    width: calc(100% / 3);
+    margin-right: 40px;
+    margin-bottom: 40px;
+    width: calc(100% / 3 - 40px);
 }
 
 .plans .col.full-size {
-    width: 100%;
-}
-
-.card {
-    margin: 20px;
+    width: calc(100% - 40px);
 }
 
 .plans .card .top {
@@ -186,27 +179,25 @@ main {
 
 /* Partner */
 
-.partner .container{
-    margin: 100px 140px;
+.partner {
+    margin-top: 80px;
+}
+.partner .col {
+    margin-right: 40px;
+    width: calc(100% / 2 - 40px);
 }
 
-.partner .col-left {
-    float: left;
-    width: 50%;
-}
-
-.partner .col-right {
-    float: right;
-    width: 50%;
-    padding: 40px;
-}
-
-.partner .col-left img {
+.partner .banner img {
     width: 100%;
 }
 
-.partner .col-right p {
+.partner .content {
+    padding-top: 40px;
+}
+
+.partner .content p {
     margin: 20px 0;
+    line-height: 2em;
 }
 
 /* Ventaglio */
