@@ -54,6 +54,15 @@ main {
     margin: 40px 0;
 }
 
+.plans .choise label {
+    margin-right: 10px;
+}
+
+.plans .row {
+    position: relative;
+    left: -20px;
+}
+
 .plans .col {
     width: calc(100% / 3);
 }
@@ -66,18 +75,15 @@ main {
     margin: 20px;
 }
 
-.plans .card .middle {
-    position: relative;
-}
-
 .plans .card .top {
     border: 1px solid grey;
     border-bottom: 0px;
     text-align: center;
-    padding: 10px;;
+    padding: 10px;
 }
 
 .plans .card .middle {
+    position: relative;
     border: 1px solid grey;
     padding: 20px;
 }
@@ -96,7 +102,7 @@ main {
     color: gray;
 }
 
-.plans .card.full-size .info {
+.plans .card .middle .info {
     margin-top: 40px;
 }
 
@@ -144,7 +150,7 @@ main {
     background-color: lightgray;
 }
 
-.plans .card.full-size .contact {
+.plans .card .middle .contact {
     position: absolute;
     top: 0;
     right: 0;
