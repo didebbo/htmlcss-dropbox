@@ -1,0 +1,35 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1920px;
+    transform: translate(-50%);
+    height: 50px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+header .nav a {
+    margin: 0 10px;
+    color: black;
+}
+
+header .logo,
+header .nav ul {
+    line-height: 50px;
+}
+
+header .logo img,
+header .nav ul a {
+    vertical-align: middle;
+}
+
+header .nav-left {
+    margin-left: 20px;
+}
+
+header .nav-right ul {
+    margin-right: 20px;
+}

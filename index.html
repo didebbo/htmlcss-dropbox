@@ -8,40 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Dropbox</title>
 </head>
 
 <body>
 
     <!-- Header -->
-
     <header>
-        <div class="container clear">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo-small.png" alt="Logo">
-                </a>
+        <div class="larg-container">
+            <div class="row">
+                <div class="col fl-left">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo-small.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col fl-left">
+                    <div class="nav">
+                        <nav class="nav-left">
+                            <ul>
+                                <li><a href="#">Perchè Dropbox</a></li>
+                                <li><a href="#">Funzioni</a></li>
+                                <li><a href="#">Piani e Prezzi</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col fl-right">
+                    <div class="nav">
+                        <nav class="nav-right">
+                            <ul>
+                                <li><a href="#">Supporto</a></li>
+                                <li><a href="#">Contatta l'ufficio vendite</a></li>
+                                <li><a href="#">Accedi</a></li>
+                            </ul>
+                            <a class="btn btn-normal bg-blue" href="#">Inizia</a>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <nav class="nav fl-left">
-                <ul>
-                    <li><a href="#">Perchè Dropbox</a></li>
-                    <li><a href="#">Funzioni</a></li>
-                    <li><a href="#">Piani e Prezzi</a></li>
-                </ul>
-            </nav>
-            <nav class="nav fl-right">
-                <ul>
-                    <li><a href="#">Supporto</a></li>
-                    <li><a href="#">Contatta l'ufficio vendite</a></li>
-                    <li><a href="#">Accedi</a></li>
-                </ul>
-                <a class="btn bg-blue" href="#">Inizia</a>
-            </nav>
-
         </div>
     </header>
-
     <!-- /Header -->
 
     <!-- Main -->
@@ -49,14 +62,14 @@
 
         <!-- Hero -->
         <section class="hero">
-            <div class="container">
+            <div class="medium-container">
                 <div class="title">
                     <h1>
                         Tutto ciò che ti serve per il lavoro, in un unico posto
                     </h1>
                 </div>
-                <div class="row clearfix">
-                    <div class="description">
+                <div class="row">
+                    <div class="col fl-left">
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quam saepe amet
                             maiores
@@ -64,13 +77,14 @@
                             atque!
                             Quisquam tempore quaerat commodi veniam rem.
                         </p>
-                        <a class="link btn bg-blue" href="#">Inizia la tua prova gratuita</a>
+                        <a class="btn btn-normal bg-blue" href="#">Inizia la tua prova gratuita</a>
                         <p class="annulla">
                             Annulla in qualsiasi momento
+                            <br>
+                            <i class="fas fa-arrow-down"></i>
                         </p>
-                        <i class="fas fa-arrow-down"></i>
                     </div>
-                    <div class="jumbo fl-left">
+                    <div class="col fl-right">
                         <img src="images/jumbo.png" alt="Jumbo">
                     </div>
                 </div>
@@ -78,9 +92,9 @@
         </section>
         <!-- /Hero -->
 
-        <!-- Section Price -->
-        <section class="prices">
-            <div class="container">
+        <!-- Plans -->
+        <section class="plans">
+            <div class="small-container">
 
                 <!-- Title -->
                 <div class="title">
@@ -90,423 +104,232 @@
                 </div>
                 <!-- /Title -->
 
-                <!-- Plans -->
-                <div class="plans">
-
-                    <!-- M/Y -->
-                    <form id="chose-plan" action="" method="POST">
+                <!-- Choise -->
+                <div class="choise">
+                    <label for="mensile">
                         <input type="radio" name="fatturazione" id="mensile" value="mensile" checked>
-                        <label for="mensile">Fatturazione Mensile</label>
+                        Fatturazione Mensile
+                    </label>
+                    <label for="annuale">
                         <input type="radio" name="fatturazione" id="annuale" value="annuale">
-                        <label for="annuale">Fatturazione Annuale</label>
-                    </form>
-                    <!-- M/Y -->
-
-                    <!-- Cards -->
-                    <div class="cards clearfix">
-
-                        <!-- Premium Card -->
-                        <div class="card">
-
-                            <!-- Top Card -->
-                            <div class="top">
-                                <h4>
-                                    <i class="far fa-user"></i>
-                                    Singolo
-                                </h4>
-                            </div>
-                            <!-- /Top Card -->
-
-                            <!-- Middle Card -->
-                            <div class="middle">
-
-                                <!-- Type of Plan -->
-                                <div class="type">
-                                    <h3>
-                                        Professional
-                                    </h3>
-                                    <p class="price">
-                                        19,99€ <br>
-                                        <span class="per">
-                                            /mese
-                                        </span>
-                                    </p>
-                                </div>
-                                <!-- /Type of Plan -->
-
-                                <!-- Features -->
-                                <div class="features">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-user"></i>
-                                            <p>
-                                                1 Utente
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-folder"></i>
-                                            <p>
-                                                3 TB di spazio di archiviazione sicuro
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-pencil-alt"></i>
-                                            <p>
-                                                Funzioni di produttività premium e condivisione file semplice e sicura
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Features -->
-
-                                <!-- Try -->
-                                <div class="try">
-                                    <p>
-                                        <a class="btn bg-blue" href="#">
-                                            Prova gratis per 30 giorni
-                                        </a>
-                                    </p>
-                                    <p class="or-buy">
-                                        oppure <a class="bg-blue" href="#"> acquista ora</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                                <!-- /Try -->
-
-                                <!-- Punti Salienti -->
-                                <div class="p-salienti">
-                                    <h4>
-                                        Punti salienti del piano
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Invia file fino a 100 GB con Dropbox Transfert
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Cartelle offline su dispositivi mobile
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Pulizia remota dell'account
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Filigrana documento
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Assistenza prioritaria via email
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <!-- /Punti Salienti -->
-
-
-                            </div>
-                            <!-- /Middle Card -->
-
-                        </div>
-                        <!-- /Premium Card -->
-
-                        <!-- Standard Card -->
-                        <div class="card">
-
-                            <!-- Top Card -->
-                            <div class="top">
-                                <h4>
-                                    <i class="far fa-building"></i>
-                                    Team
-                                </h4>
-                            </div>
-                            <!-- /Top Card -->
-
-                            <!-- Middle Card -->
-                            <div class="middle">
-
-                                <!-- Type of Plan -->
-                                <div class="type">
-                                    <h3>
-                                        Standard
-                                    </h3>
-                                    <p class="price">
-                                        19,99€ <br>
-                                        <span class="per">
-                                            /utente /mese, a partire da 3 utenti
-                                        </span>
-                                    </p>
-                                </div>
-                                <!-- /Type of Plan -->
-
-                                <!-- Features -->
-                                <div class="features">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-user-plus"></i>
-                                            <p>
-                                                1 Utente
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-folder"></i>
-                                            <p>
-                                                3 TB di spazio di archiviazione sicuro
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-pencil-alt"></i>
-                                            <p>
-                                                Funzioni di produttività premium e condivisione file semplice e sicura
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Features -->
-
-                                <!-- Try -->
-                                <div class="try">
-                                    <p>
-                                        <a class="btn bg-blue" href="#">
-                                            Prova gratis per 30 giorni
-                                        </a>
-                                    </p>
-                                    <p class="or-buy">
-                                        oppure <a class="bg-blue" href="#"> acquista ora</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                                <!-- /Try -->
-
-                                <!-- Punti Salienti -->
-                                <div class="p-salienti">
-                                    <h4>
-                                        Punti salienti del piano
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Invia file fino a 100 GB con Dropbox Transfert
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Cartelle offline su dispositivi mobile
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Pulizia remota dell'account
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Filigrana documento
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Assistenza prioritaria via email
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <!-- /Punti Salienti -->
-
-
-                            </div>
-                            <!-- /Middle Card -->
-
-                        </div>
-                        <!-- /Standard Card -->
-
-                        <!-- Advanced Card -->
-                        <div class="card">
-
-                            <!-- Top Card -->
-                            <div class="top">
-                                <h4>
-                                    <i class="far fa-building"></i>
-                                    Team
-                                </h4>
-                            </div>
-                            <!-- /Top Card -->
-
-                            <!-- Middle Card -->
-                            <div class="middle">
-
-                                <!-- Type of Plan -->
-                                <div class="type">
-                                    <h3>
-                                        Advanced
-                                    </h3>
-                                    <p class="price">
-                                        19,99€ <br>
-                                        <span class="per">
-                                            /utente /mese, a partire da 3 utenti
-                                        </span>
-                                    </p>
-                                </div>
-                                <!-- /Type of Plan -->
-
-                                <!-- Features -->
-                                <div class="features">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-user-plus"></i>
-                                            <p>
-                                                1 Utente
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-folder"></i>
-                                            <p>
-                                                3 TB di spazio di archiviazione sicuro
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-pencil-alt"></i>
-                                            <p>
-                                                Funzioni di produttività premium e condivisione file semplice e sicura
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Features -->
-
-                                <!-- Try -->
-                                <div class="try">
-                                    <p>
-                                        <a class="btn bg-blue" href="#">
-                                            Prova gratis per 30 giorni
-                                        </a>
-                                    </p>
-                                    <p class="or-buy">
-                                        oppure <a class="bg-blue" href="#"> acquista ora</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                                <!-- /Try -->
-
-                                <!-- Punti Salienti -->
-                                <div class="p-salienti">
-                                    <h4>
-                                        Punti salienti del piano
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Invia file fino a 100 GB con Dropbox Transfert
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Cartelle offline su dispositivi mobile
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Pulizia remota dell'account
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Filigrana documento
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i>
-                                            <p>
-                                                Assistenza prioritaria via email
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <!-- /Punti Salienti -->
-
-
-                            </div>
-                            <!-- /Middle Card -->
-
-                        </div>
-                        <!-- Advanced Card -->
-
-                    </div>
-                    <!-- Cards -->
-
-                    <!-- Full Cards -->
-                    <div class="cards clearfix">
-                        <div class="card full-card">
-
-                            <!-- Top Card -->
-                            <div class="top">
-                                <h4>
-                                    <i class="far fa-user"></i>
-                                    Team
-                                </h4>
-                            </div>
-                            <!-- /Top Card -->
-
-                            <!-- Middle Card -->
-                            <div class="middle">
-
-                                <!-- Type of Plan -->
-                                <div class="type">
-                                    <h3>
-                                        Enterprice
-                                    </h3>
-                                    <p class="price">
-                                        Contatta l'ufficio vendite per i prezzi
-                                    </p>
-                                </div>
-                                <!-- /Type of Plan -->
-
-                                <!-- Features -->
-                                <div class="features">
-                                    <p>
-                                        Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT
-                                        nella gestione su qualsiasi scala
-                                    </p>
-                                </div>
-                                <!-- /Features -->
-
-                                <a class="btn bg-blue" href="#">
-                                    Contatta l'ufficio vendite
-                                </a>
-
-                            </div>
-                            <!-- /Middle Card -->
-
-                        </div>
-                    </div>
-
+                        Fatturazione Annuale
+                    </label>
                 </div>
-                <!-- /Plans -->
+                <!-- /Choise -->
+
+                <!-- Cards -->
+                <div class="row">
+
+                    <!-- Premium Card -->
+                    <div class="col fl-left">
+                        <!-- Top Card -->
+                        <div class="top">
+                            <h4>
+                                <i class="far fa-user"></i>
+                                Singolo
+                            </h4>
+                        </div>
+                        <!-- /Top Card -->
+
+                        <!-- Middle Card -->
+                        <div class="middle">
+
+                            <!-- Title -->
+                            <div class="title">
+                                <h3>
+                                    Professional
+                                </h3>
+                            </div>
+                            <!-- /Title -->
+
+                            <!-- Price -->
+                            <div class="price">
+                                <div class="cost">
+                                    19,99€
+                                </div>
+                                <div class="per">
+                                    /mese
+                                </div>
+                            </div>
+                            <!-- /Price -->
+
+                            <!-- Limits -->
+                            <div class="limits">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam est
+                                            quia vitae doloribus labore quo sit quos vero officia numquam nihil esse,
+                                            mollitia nobis architecto provident neque harum molestiae aut?
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                            assumenda provident modi repudiandae quam exercitationem libero, est sequi
+                                            nam, aspernatur quod blanditiis possimus dolores minus quia voluptatum illo
+                                            culpa at!
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                            doloremque enim quaerat cumque temporibus deserunt doloribus nihil maxime!
+                                            Possimus nobis quidem quasi beatae velit laborum illo! Aliquid quos dolore
+                                            perferendis.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /Limits -->
+
+                            <!-- Try 30 days -->
+                            <div class="try-30-days">
+                                <div class="button">
+                                    <a class="btn btn-medium bg-blue" href="#">
+                                        Prova gratis per 30 giorni
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    oppure <a href="#"> acquista ora</a>
+                                </div>
+
+                                <div class="separator"></div>
+                                <!-- /Try 30 days -->
+                            </div>
+                            <!-- /Try 30 days -->
+
+                            <!-- Features -->
+                            <div class="features">
+                                <div class="title">
+                                    <h4>
+                                        Punti salienti
+                                    </h4>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                            <div class="text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quisquam
+                                                neque nobis nisi excepturi officiis necessitatibus et assumenda alias!
+                                                Commodi saepe velit enim voluptate ipsam, perspiciatis provident vero
+                                                cumque quia.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                            <div class="text">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id dolor
+                                                ratione aspernatur doloremque quidem officiis, ullam culpa
+                                                necessitatibus exercitationem, ex aperiam odit, neque laborum iusto
+                                                sequi? Dolorem ipsam laudantium ea!
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                            <div class="text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                                                eos id commodi aliquam doloremque! Assumenda delectus ratione labore
+                                                facere, et, quas quos ipsum eum, quisquam repudiandae itaque possimus
+                                                cum! Dolor.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                            <div class="text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eum
+                                                eveniet architecto optio quibusdam eligendi illo earum sit similique ut?
+                                                Nemo cupiditate optio culpa nihil maxime laudantium vero amet dolores.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                            <div class="text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+                                                voluptatem aliquid id velit aspernatur vitae, maiores commodi ipsam,
+                                                voluptate iusto officia architecto, provident labore eos? Blanditiis quo
+                                                repellendus reprehenderit soluta?
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Features -->
+                        </div>
+                        <!-- /Middle Card -->
+                    </div>
+                    <!-- /Premium Card -->
+                </div>
+                <!-- /Cards -->
+
+                <!-- Full Cards -->
+                <div class="row">
+
+                    <!-- Card -->
+                    <div class="col">
+
+                        <!-- Top Card -->
+                        <div class="top">
+                            <h4>
+                                <i class="far fa-user"></i>
+                                Singolo
+                            </h4>
+                        </div>
+                        <!-- /Top Card -->
+
+                        <!-- Middle Card -->
+                        <div class="middle">
+                            <div class="title">
+                                <h3>
+                                    Enterprice
+                                </h3>
+                            </div>
+
+                            <!-- Price -->
+                            <div class="price">
+                                <div class="cost">
+                                    Contatta l'ufficio vendite per i prezzi
+                                </div>
+                                <div class="per">
+                                    Soluzioni personalizzate e...
+                                </div>
+                            </div>
+                            <!-- /Price -->
+
+                            <!-- Button -->
+                            <div class="btn btn-medium bg-blue">
+                                Contatta l'ufficio vendite
+                            </div>
+                            <!-- /Button -->
+                        </div>
+                        <!-- /Middle Card -->
+                    </div>
+                    <!-- /Card -->
+                </div>
+                <!-- /Full Cards -->
             </div>
         </section>
-        <!-- /Section Price -->
+        <!-- /Plans -->
 
         <!-- Partner -->
         <section class="partner">

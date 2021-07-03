@@ -1,207 +1,135 @@
-/* Import */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
-    max-width: 1920px;
-    min-width: 1024px;
-    margin: auto;
-}
-
-ul {
-    display: inline-block;
-}
-
-li {
-    display: inline-block;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #0967FF;
-}
-
-/* Clearfix */
-.clearfix::after{
-    display: table;
-    content: "";
-    clear: both;
-}
-
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    color: #fff;
-    background-color: gray;
-    padding: 5px 10px;
-    /* font-weight: bold; */
-}
-
-.btn.bg-blue {
-    background-color: #0061FF;
-    color: #fff;
-}
-
-.btn.bg-white {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-}
-
-/* Commons */
-
-/* Header */
-
-header {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    min-width: 1024px;
-    max-width: 1920px;
-    transform: translate(-50%);
-    height: 50px;
-    background-color: #fff;
-    z-index: 10;
-}
-
-header .container {
-    height: 100%;
-    margin: 0 20px;
-}
-
-header .logo {
-    float: left;
-    line-height: 50px;
-}
-
-header .logo img {
-    width: 100%;    
-    vertical-align: middle;
-}
-
-header .nav.fl-left{
-    float: left;
-    margin: 0 20px;
-    line-height: 50px;
-}
-header .nav.fl-left a {
-    vertical-align: middle;
-    color: black;
-    margin: 0 10px;
-}
-
-header .nav.fl-right {
-    float: right;
-}
-header .nav.fl-right ul {
-    line-height: 50px;
-}
-
-header .nav.fl-right ul a {
-    color: black;
-    margin: 0 10px;
-}
-
-header .nav.fl-right a {
-    vertical-align: middle;
-}
-
-#btn-inizia {
-    margin-left: 20px;
-}
-
-/* Main */
-
 main {
-    padding-top: 50px;
-    background-color: #fff;
+    margin-top: 50px;
 }
 
-/* Hero Section */
-
+/* Hero */
 .hero {
     background-color: #B4D0E7;
-    padding-top: 60px;
 } 
-
-.hero .container {
-    margin: auto 80px;
-}
-
-.hero .title {
-    font-size: 2rem;
-}
 
 .hero .row {
     position: relative;
-    bottom: -60px;
+    bottom: -140px;
 }
 
-.hero .description {
-    float: left;
+.hero .col.fl-left {
     width: 40%;
 }
 
-.hero .description .link {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    height: 100%;
-}
-
-.hero .description p.annulla {
-    text-decoration: underline;
-    font-size: 0.9em;
-}
-
-.hero .description .fa-arrow-down {
-    font-size: 2em;
-    margin: 40px 0;
-}
-
-.hero .jumbo {
-    float: left;
+.hero .col.fl-right {
     width: 60%;
 }
 
-.hero .jumbo img {
+.hero .col.fl-right img {
     width: 100%;
 }
+/* /Hero */
 
-/* Price Section */
-.prices {
-    background-color: #fff;
+/* Plans */
+
+.plans .choise {
+    margin: 20px 0;
 }
 
-.prices .container {
-    margin: 200px 140px 0;
+.plans .col {
+    width: calc(100% / 3);
 }
 
-.prices .title h2 {
-    font-size: 2em;
+.plans .col .top {
+    border: 1px solid grey;
+    border-bottom: 0px;
+    text-align: center;
+}
+
+.plans .col .middle {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.plans .col .middle .price {
+    margin: 20px 0;
+}
+
+.plans .col .middle .price .cost {
+    margin-bottom: 10px;
+}
+
+.plans .col .middle .limits li {
+    display: block;
+    padding-top: 20px;
+}
+
+.plans .col .middle .limits .icon,
+.plans .col .middle .limits .text {
+    float: left;
+}
+
+.plans .col .middle .limits .icon {
+    padding-right: 10px;
+}
+
+.plans .col .middle .limits .text {
+    width: 90%;
+}
+
+.plans .col .middle .try-30-days {
+    margin: 20px 0;
+}
+
+.plans .col .middle .try-30-days .button {
+    text-align: center;
+}
+.plans .col .middle .try-30-days .button a {
+    display: block;
+}
+
+.plans .col .middle .try-30-days .text {
+    margin: 20px 0;
+}
+
+.plans .col .middle .try-30-days .separator {
+    width: 10%;
+    height: 2px;
+    margin: 40px 0;
+    background-color: lightgray;
+}
+
+.plans .col .middle .features .list {
+    margin: 20px 0;
+}
+
+.plans .col .middle .features .list li {
+    display: block;
+}
+
+.plans .col .middle .features .list .icon,
+.plans .col .middle .features .list .text {
+    float: left;
+}
+
+.plans .col .middle .features .list .icon {
+    padding-right: 10px;
+}
+
+.plans .col .middle .features .list .text {
+    width: 90%;
 }
 
 .prices .plans {
     margin: 20px 0;
+}
+
+.prices .plans label {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
     /* background-color: red; */
 }
 
 /* Cards */
 
 .prices .cards {
-    margin: 40px -20px;
+    margin: 30px -20px;
 }
 
 .prices .cards .card {
@@ -426,7 +354,3 @@ main {
 #topps {
     background-color: #FF1C1C;
 }
-
-
-
-
