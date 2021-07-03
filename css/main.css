@@ -43,23 +43,36 @@ main {
 .hero .call-to-action .fas {
     font-size: 3em;
 }
-
 /* /Hero */
 
 /* Plans */
+.plans .small-container {
+    margin-top: 180px;
+}
 
 .plans .choise {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .plans .col {
-    width: calc(100% / 3);
+    margin: 20px;
+    width: calc(100% / 3 - 20px * 2);
+}
+
+.plans .col.full-size {
+    width: calc(100% - 20px * 2);
+    margin: auto;
+}
+
+.plans .col.full-size .middle {
+    position: relative;
 }
 
 .plans .col .top {
     border: 1px solid grey;
     border-bottom: 0px;
     text-align: center;
+    padding: 10px;
 }
 
 .plans .col .middle {
@@ -73,11 +86,21 @@ main {
 
 .plans .col .middle .price .cost {
     margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.plans .col .middle .price .per {
+    color: gray;
+}
+
+.plans .col.full-size .info {
+    margin-top: 40px;
 }
 
 .plans .col .middle .limits li {
     display: block;
-    padding-top: 20px;
+    margin-top: 10px;
 }
 
 .plans .col .middle .limits .icon,
@@ -86,11 +109,11 @@ main {
 }
 
 .plans .col .middle .limits .icon {
-    padding-right: 10px;
+    margin-right: 5px;
 }
 
 .plans .col .middle .limits .text {
-    width: 90%;
+    width: calc(90% - 5px);
 }
 
 .plans .col .middle .try-30-days {
@@ -108,19 +131,34 @@ main {
     margin: 20px 0;
 }
 
+.plans .col .middle .try-30-days .text a {
+    text-decoration: underline;
+}
+
 .plans .col .middle .try-30-days .separator {
     width: 10%;
     height: 2px;
-    margin: 40px 0;
+    margin: 20px 0;
     background-color: lightgray;
 }
 
+.plans .col.full-size .contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.plans .col .middle .features {
+    margin: 40px 0;
+}
 .plans .col .middle .features .list {
     margin: 20px 0;
 }
 
 .plans .col .middle .features .list li {
     display: block;
+    margin-top: 10px;
 }
 
 .plans .col .middle .features .list .icon,
@@ -129,144 +167,14 @@ main {
 }
 
 .plans .col .middle .features .list .icon {
-    padding-right: 10px;
+    margin-right: 5px;
+    color: #0061FF;
 }
 
 .plans .col .middle .features .list .text {
-    width: 90%;
+    width: calc(90% - 5px);
 }
-
-.prices .plans {
-    margin: 20px 0;
-}
-
-.prices .plans label {
-    display: inline-block;
-    margin-top: 10px;
-    margin-right: 20px;
-    /* background-color: red; */
-}
-
-/* Cards */
-
-.prices .cards {
-    margin: 30px -20px;
-}
-
-.prices .cards .card {
-    float: left;
-    padding: 0 20px;
-    width: calc(100% /3);
-    /* background-color: red; */
-}
-
-.prices .cards .card .top {
-    border: 1px solid grey;
-    border-bottom: 0;
-    text-align: center;
-    padding: 10px;
-}
-
-.prices .cards .card .middle {
-    border: 1px solid grey;
-    padding: 40px;
-    position: relative;
-}
-
-.prices .cards .card .middle .type .price {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.prices .cards .card .middle .type .price .per {
-    display: inline-block;
-    font-weight: normal;
-    font-size: 0.9em;
-    margin-top: 5px;
-}
-
-.prices .cards .card .middle .features {
-    font-size: 0.9em;
-    margin-top: 20px;
-}
-
-.prices .cards .card .middle .features li {
-    display: table;
-    content: "";
-    clear: both;
-    margin: 10px 0;
-    width: 100%;
-}
-
-.prices .cards .card .middle .features i {
-    float: left;
-    margin-right: 10px;
-}
-
-.prices .cards .card .middle .features p {
-    width: calc(90% - 10px);
-    float: left;
-    vertical-align: middle;
-}
-
-.prices .cards .card .middle .try a.btn {
-    display: block;
-    text-align: center;
-}
-
-.prices .cards .card .middle .try p.or-buy {
-    margin: 20px 0;
-    font-size: 0.9em;
-}
-
-.prices .cards .card .middle .try hr {
-    width: 20%;
-    height: 0.5px;
-    background-color: gray;
-    border: none;
-}
-
-.prices .cards .card .middle .p-salienti {
-    font-size: 0.9em;
-    margin-top: 20px;
-}
-
-.prices .cards .card .middle .p-salienti li {
-    display: table;
-    content: "";
-    clear: both;
-    margin: 10px 0;
-    width: 100%;
-}
-
-.prices .cards .card .middle .p-salienti i {
-    float: left;
-    margin-right: 10px;
-    color: #0363FF;
-}
-
-.prices .cards .card .middle .p-salienti p {
-    width: calc(90% - 10px);
-    float: left;
-    vertical-align: middle;
-}
-
-.prices .cards .card.full-card {
-    width: 100%;
-}
-
-.prices .cards .card.full-card .middle .features p {
-    display: inline;
-    /* background-color: red; */
-}
-
-.prices .cards .card.full-card .middle a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 30px;
-    padding: 5px 40px;
-}
+/* /Plans */
 
 /* Partner */
 
