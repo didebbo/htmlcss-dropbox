@@ -9,13 +9,18 @@
 /* Body */
 body {
     background-color: #fff;
-    /* font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
     max-width: 1920px;
     min-width: 1024px;
     margin: auto;
 }
 /* /Body */
+
+/* Head */
+h1 {font-size: 5em;}
+/* Head */
 
 /* Main */
 
@@ -34,9 +39,9 @@ a {
 /* /Link */
 
 /* Section */
-section {
+/* section {
     padding: 80px 0;
-}
+} */
 /* /Section */
 
 /* Container */
