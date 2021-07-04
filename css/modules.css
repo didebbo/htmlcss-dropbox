@@ -74,7 +74,8 @@ section {
 .clearfix::after,
 .row::after,
 .plans .col .middle .limits li::after,
-.plans .col .middle .features .list li::after {
+.plans .col .middle .features .list li::after,
+.faq .content li::after {
     display: table;
     content: "";
     clear: both;    

@@ -230,6 +230,9 @@ main {
 
 /* Brands */
 
+.brands {
+    margin-bottom: 0;
+}
 .brands .content {
     position: relative;
     padding: 40px;
@@ -318,3 +321,56 @@ main {
 #clear_channel {
     background-color: #FFD830;
 }
+/* /Brands */
+
+/* Azienda */
+.azienda {
+    margin-top: 0;
+    background-color: #B4D0E7;
+    padding: 80px 0;
+}
+
+.azienda .col {
+    width: calc(100% / 2);
+}
+
+.azienda .title {
+    color: #61082B;
+}
+
+.azienda .call-to-action {
+    text-align: center;
+}
+.azienda .btn {
+    border: 0px;
+}
+/* /Azienda */
+
+/* FAQ   */
+.faq .content {
+    margin: 40px 0;
+    font-weight: bold;
+}
+.faq .content ul,
+.faq .content li {
+    display: block;
+}
+
+.faq .content li {
+    border-bottom: 2px solid lightgrey;
+    padding: 30px 0;
+    padding-right: 20px;
+}
+
+.faq .content li:first-child {
+    border-top: 2px solid lightgrey;
+}
+
+.faq .content .text {
+    float: left;
+}
+.faq .content .icon {
+    float: right;
+}
+
+/* /FAQ   */
