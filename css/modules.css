@@ -137,3 +137,11 @@ section {
 }
 
 /* Buttons */
+
+/* Separator */
+.separator {
+    width: 10%;
+    height: 2px;
+    background-color: lightgray;
+}
+/* /Separator */

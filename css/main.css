@@ -61,7 +61,6 @@ main {
 .plans .col {
     margin-right: 40px;
     margin-bottom: 40px;
-    width: 100%;
     width: calc(100% / 3 - 40px);
 }
 
@@ -138,10 +137,7 @@ main {
 }
 
 .plans .card .middle .try-30-days .separator {
-    width: 10%;
-    height: 2px;
     margin: 20px 0;
-    background-color: lightgray;
 }
 
 .plans .card .middle .contact {
@@ -233,18 +229,47 @@ main {
 /* /Clienti */
 
 /* Brands */
+
+.brands .content {
+    position: relative;
+    padding: 40px;
+}
+
+.brands .content .logo {
+    width: 30%;
+}
+
+.brands .content .logo img {
+    width: 100%;
+}
+
+.brands .content .separator {
+    margin: 20px 0 40px 0;
+}
+
+.brands .content .text p {
+    margin-bottom: 40px;
+}
+
+.brands > .full-container > .row {
+    height: calc(100vw / 3);
+    max-height: calc(1920px / 3);
+    min-height: calc(1024px / 3);
+    background-color: #F5F5F5;
+}
 .brands > .full-container > .row > .col  {
     width: calc(100% / 3);
-    max-width: calc(1920px / 3);
-    min-width: calc(1024px / 3);
+}
+
+.brands > .full-container > .row > .col > .row {
+    height: calc((100vw / 3) / 2);
+    max-height: calc((1920px / 3) / 2);
+    min-height: calc((1024px / 3) / 2);
 }
 
 .brands > .full-container > .row > .col > .row > .col  {
     position: relative;
     width: calc(100% / 2);
-    height: calc((100vw / 3) / 2);
-    max-height: calc((1920px / 3) / 2);
-    min-height: calc((1024px / 3) / 2);
 }
 
 .brands > .full-container > .row > .col > .row > .col > .item img {
