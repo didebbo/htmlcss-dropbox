@@ -22,10 +22,6 @@ footer {
     margin: 10px 0;
 }
 
-.top-footer .nav a {
-    font-size: 0.8em;
-}
-
 .top-footer .col {
     width: calc(100% / 5);
 }
@@ -33,13 +29,13 @@ footer {
 
 /* Bottom Footer */
 .bottom-footer {
-    color: lightgrey;
+    color: gray;
 }
 
 .bottom-footer .lang {
     display: inline-block;
-    font-size: 8px;
-    border-top: 1px solid lightgray;
+    font-size: 0.8em;
+    border-top: 1px solid gray;
     margin-top: 40px;
     padding-top: 20px;
 }
