@@ -59,118 +59,125 @@ main {
     margin-right: 10px;
 }
 
-.plans .col {
+.plans .row > .col {
     margin-right: 40px;
     margin-bottom: 40px;
     width: calc(100% / 3 - 40px);
 }
 
-.plans .col.full-size {
+.plans .row > .col.full-size {
     width: calc(100% - 40px);
 }
 
-.plans .card .top {
+.plans .row > .col.full-size .middle .row > .col {
+    margin: 0;
+    width: calc(100% / 2);
+}
+
+.plans .top {
     border: 1px solid grey;
     border-bottom: 0px;
     text-align: center;
     padding: 10px;
 }
 
-.plans .card .middle {
+.plans .middle {
     position: relative;
     border: 1px solid grey;
     padding: 20px;
+    min-height: 800px;
 }
 
-.plans .card .middle .price {
+.plans .row > .col.full-size .middle {
+    min-height: auto;
+}
+
+.plans .middle .price {
     margin: 20px 0;
 }
 
-.plans .card .middle .price .cost {
+.plans .middle .price .cost {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 1.1em;
 }
 
-.plans .card .middle .price .per {
+.plans .middle .price .per {
     color: gray;
 }
 
-.plans .card .middle .info {
+.plans .middle .info {
     margin-top: 40px;
 }
 
-.plans .card .middle .limits li {
+.plans .middle .contact {
+    text-align: right;
+}
+
+.plans .middle .limits li {
     display: block;
     margin-top: 10px;
 }
 
-.plans .card .middle .limits .icon,
-.plans .card .middle .limits .text {
+.plans .middle .limits .icon,
+.plans .middle .limits .text {
     float: left;
 }
 
-.plans .card .middle .limits .icon {
+.plans .middle .limits .icon {
     margin-right: 5px;
 }
 
-.plans .card .middle .limits .text {
+.plans .middle .limits .text {
     width: calc(90% - 5px);
 }
 
-.plans .card .middle .try-30-days {
+.plans .middle .try-30-days {
     margin: 20px 0;
 }
 
-.plans .card .middle .try-30-days .button {
+.plans .middle .try-30-days .button {
     text-align: center;
 }
-.plans .card .middle .try-30-days .button a {
+.plans .middle .try-30-days .button a {
     display: block;
 }
 
-.plans .card .middle .try-30-days .text {
+.plans .middle .try-30-days .text {
     margin: 20px 0;
 }
 
-.plans .card .middle .try-30-days .text a {
+.plans .middle .try-30-days .text a {
     text-decoration: underline;
 }
 
-.plans .card .middle .try-30-days .separator {
+.plans .middle .try-30-days .separator {
     margin: 20px 0;
 }
 
-.plans .card .middle .contact {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-}
-
-.plans .card .middle .features {
+.plans .middle .features {
     margin: 40px 0;
 }
-.plans .card .middle .features .list {
+.plans .middle .features .list {
     margin: 20px 0;
 }
 
-.plans .card .middle .features .list li {
+.plans .middle .features .list li {
     display: block;
     margin-top: 10px;
 }
 
-.plans .card .middle .features .list .icon,
-.plans .card .middle .features .list .text {
+.plans .middle .features .list .icon,
+.plans .middle .features .list .text {
     float: left;
 }
 
-.plans .card .middle .features .list .icon {
+.plans .middle .features .list .icon {
     margin-right: 5px;
     color: #0061FF;
 }
 
-.plans .card .middle .features .list .text {
+.plans .middle .features .list .text {
     width: calc(90% - 5px);
 }
 /* /Plans */
