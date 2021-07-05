@@ -263,8 +263,8 @@ main {
 
 .brands > .full-container > .row {
     height: calc(100vw / 3);
-    max-height: calc(1920px / 3);
     min-height: calc(1024px / 3);
+    max-height: calc(1920px / 3);
     background-color: #F5F5F5;
 }
 .brands > .full-container > .row > .col  {
@@ -273,8 +273,8 @@ main {
 
 .brands > .full-container > .row > .col > .row {
     height: calc((100vw / 3) / 2);
-    max-height: calc((1920px / 3) / 2);
     min-height: calc((1024px / 3) / 2);
+    max-height: calc((1920px / 3) / 2);
 }
 
 .brands > .full-container > .row > .col > .row > .col  {
