@@ -36,9 +36,12 @@ main {
 }
 
 .hero .call-to-action .annulla {
-    text-decoration: underline;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.hero .call-to-action .annulla a {
+    color: #000;
 }
 
 .hero .call-to-action .fas {
@@ -230,10 +233,6 @@ main {
 .clienti .title {
     margin-bottom: 20px;
 }
-
-.clienti .more-info a {
-    text-decoration: underline;
-}
 /* /Clienti */
 
 /* Brands */
@@ -283,6 +282,16 @@ main {
     width: calc(100% / 2);
 }
 
+.brands > .full-container > .row > .col > .row > .col > .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.brands > .full-container > .row > .col > .row > .col > .item:hover {
+    border: 8px solid rgba(255,255,255,0.5);
+}
+
 .brands > .full-container > .row > .col > .row > .col > .item img {
     position: absolute;
     width: 50%;
@@ -291,14 +300,7 @@ main {
     transform: translate(-50%,-50%);
 }
 
-.brands > .full-container > .row > .col > .row > .col > .item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
 #designit {
-    border: 8px solid #D0E9CD;
     background-color: #A2D39B;
 }
 
@@ -374,9 +376,24 @@ main {
     border-top: 2px solid lightgrey;
 }
 
+.faq .content li:hover .solution {
+    height: 80px;
+}
+
 .faq .content .text {
     float: left;
 }
+
+.faq .content .solution {
+    position: relative;
+    float: left;
+    height: 0;
+    top: 50%;
+    transform: translate(0,50%);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
 .faq .content .icon {
     float: right;
 }

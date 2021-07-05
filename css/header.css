@@ -11,19 +11,26 @@ header {
     z-index: 10;
 }
 
-header .nav a {
-    margin: 0 10px;
-    color: black;
-}
-
 header .logo,
-header .nav ul {
+header .nav ul li {
     line-height: 50px;
 }
 
 header .logo img,
 header .nav ul a {
     vertical-align: middle;
+}
+
+header .nav ul a {
+    display: inline-block;
+    line-height: normal;
+    margin: 0 10px;
+    color: black;
+    transition: 0.3s;
+}
+
+header .nav ul a:hover {
+    transform: scale(1.2);
 }
 
 header .nav-left {

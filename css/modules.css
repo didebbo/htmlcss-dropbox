@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+/* /Fonts */
+
 /* Reset */
 * {
     margin: 0;
@@ -104,13 +108,35 @@ section {
 }
 /* /Float */
 
+/* Effects */
+.eft-hover {
+    transition: 0.3s;
+}
+.eft-hover:hover {
+    transform: scale(1.1);
+    
+}
+
+.eft-underline:hover {
+    text-decoration: underline;
+}
+
+.eft-down {
+    position: relative;
+    transition: 0.3s;
+}
+
+.eft-down:hover {
+    transform: translate(0,20px);
+}
+/* /Effects */
+
 /* Buttons */
 .btn {
     display: inline-block;
     color: #fff;
     background-color: gray;
     padding: 5px 10px;
-    /* font-weight: bold; */
 }
 
 /* Colors */
