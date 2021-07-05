@@ -109,12 +109,11 @@ section {
 /* /Float */
 
 /* Effects */
-.eft-hover {
+.eft-scale {
     transition: 0.3s;
 }
-.eft-hover:hover {
+.eft-scale:hover {
     transform: scale(1.1);
-    
 }
 
 .eft-underline:hover {
