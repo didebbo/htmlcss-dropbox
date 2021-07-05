@@ -4,6 +4,7 @@ main {
 
 /* Hero */
 .hero {
+    margin: 0;
     background-color: #B4D0E7;
 } 
 
